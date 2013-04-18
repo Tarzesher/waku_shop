@@ -1,4 +1,8 @@
 WakuShop::Application.routes.draw do
+  get "custom_pages/Home"
+
+  get "custom_pages/Help"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
