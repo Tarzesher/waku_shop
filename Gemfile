@@ -4,10 +4,19 @@ gem 'rails', '3.2.1'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
+gem 'bootstrap-sass', '2.3.1.0'
+group :development, :test do
+	gem 'sqlite3', '1.3.7'
+	gem 'rspec-rails', '2.9.0'
+end
 
-gem 'sqlite3'
+group :test do
+	gem 'capybara', '1.1.2'
+end
 
-
+group :production do
+	gem 'pg', '0.13.1'
+end
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
