@@ -11,20 +11,23 @@
 </head>
 <body>
 <!-- Top Bar and Navigation design -->
-
 <header class="navbar navbar-fixed-top">
-	<div class="navbar-inner">
-		<div class="container">
-				<%= link_to "Tap 'em communicate", "#", id: "logo" %>
-				<nav>
-					<ul class=" nav pull-right">
-						<li><%= link_to("Home", '#') %></li>
-						<li><%= link_to("Help", '#') %></li>
-						<li><%= link_to("Sign in", '#') %></li>
-					</ul>
-				</nav>	
-		</div>
+	<div class="headerShade">
+		<%= image_tag('w_logo_small.png', alt: 'Waku Logo') %>
 	</div>
+
+	<div class="navbar-inner">
+		<div class="nav container">
+			Search
+		</div>
+		<nav>
+			<ul class=" nav pull-right">
+				<li><%= link_to("Home", '#') %></li>
+				<li><%= link_to("Help", '#') %></li>
+				<li><%= link_to("Sign in", '#') %></li>
+			</ul>
+		</nav>
+	
 </header>
 
 
