@@ -1,4 +1,5 @@
 WakuShop::Application.routes.draw do
+<<<<<<< HEAD
   get "wkshp_carts/new"
 
   get "wkshp_packages/new"
@@ -24,6 +25,11 @@ WakuShop::Application.routes.draw do
   get "custom_pages/Home"
 
   get "custom_pages/Help"
+=======
+  get "custom_pages/home"
+
+  get "custom_pages/help"
+>>>>>>> master
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
