@@ -1,0 +1,2 @@
+module WkshpAccountsHelper
+end

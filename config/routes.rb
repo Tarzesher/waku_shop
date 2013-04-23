@@ -1,4 +1,26 @@
 WakuShop::Application.routes.draw do
+  get "wkshp_carts/new"
+
+  get "wkshp_packages/new"
+
+  get "wkshp_address_books/new"
+
+  get "wkshp_orders/new"
+
+  get "wkshp_products/new"
+
+  get "wkshp_currencies/new"
+
+  get "wkshp_shipments/new"
+
+  get "wkshp_countries/new"
+
+  get "wkshp_inventories/new"
+
+  get "wkshp_departments/new"
+
+  get "wkshp_accounts/new"
+
   get "custom_pages/Home"
 
   get "custom_pages/Help"

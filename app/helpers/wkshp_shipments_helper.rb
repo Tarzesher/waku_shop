@@ -1,0 +1,2 @@
+module WkshpShipmentsHelper
+end

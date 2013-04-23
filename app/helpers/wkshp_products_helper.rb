@@ -1,0 +1,2 @@
+module WkshpProductsHelper
+end
