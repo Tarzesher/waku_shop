@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.1'
 
-<<<<<<< HEAD
+#<<<<<<< HEAD
 
 gem 'bootstrap-sass', '2.3.1.0'
 
@@ -12,7 +12,7 @@ group :development, :test do
   gem 'annotate', '2.5.0'
 end
 
-=======
+#=======
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 gem 'bootstrap-sass', '2.3.1.0'
@@ -30,7 +30,7 @@ group :production do
 end
 # Gems used only for assets and not required
 # in production environments by default.
->>>>>>> master
+#>>>>>>> master
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
