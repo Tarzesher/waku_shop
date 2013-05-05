@@ -21,10 +21,6 @@ WakuShop::Application.routes.draw do
   get "wkshp_departments/new"
 
   get "wkshp_accounts/new"
-
-  get "custom_pages/Home"
-
-  get "custom_pages/Help"
 =======
   get "custom_pages/home"
 
