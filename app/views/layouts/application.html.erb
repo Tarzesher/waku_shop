@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-<<<<<<< HEAD
   <title><%= full_title(yield(:title)) %></title>
-=======
   <title>WakuShop</title>
->>>>>>> master
   <%= stylesheet_link_tag    "application", media: "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
@@ -16,27 +13,31 @@
 <body>
 <!-- Top Bar and Navigation design -->
 <header class="navbar navbar-fixed-top">
-	<div class="headerShade">
-		<%= image_tag('w_logo_small.png', alt: 'Waku Logo') %>
-	</div>
-
-	<div class="navbar-inner">
-		<div class="nav container">
-			Search
-		</div>
-		<nav>
+			<nav>
 			<ul class=" nav pull-right">
 				<li><%= link_to("Home", '#') %></li>
 				<li><%= link_to("Help", '#') %></li>
 				<li><%= link_to("Sign in", '#') %></li>
 			</ul>
 		</nav>
-	
+	<div class="headerShade">
+		<%= image_tag('w_logo_small.png', alt: 'Waku Logo') %>
+	</div>
+
+	<div class="navbar-inner" align="center">
+		<%= form_tag("/search", :method => "get") do %>
+			Search
+			<%= text_field_tag(:q) %>
+			<%= submit_tag("Find") %>
+		<% end %>	
+	</div>
 </header>
 
 
 <div class="container">
-	<%= yield %>
+	<div class ="">
+		<%= yield %>
+	</div>
 </div>
 
 </body>

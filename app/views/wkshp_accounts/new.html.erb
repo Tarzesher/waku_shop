@@ -1,2 +1,15 @@
-<h1>WkshpAccounts#new</h1>
-<p>Find me in app/views/wkshp_accounts/new.html.erb</p>
+<%= form_tag( :method => "POST") do %>
+<table>
+<tr><td>Name: <td><%= text_field_tag(:name) %></td></tr>
+<tr><td>Surname: <td><%= text_field_tag(:surname) %></td></tr>
+<tr><td>Date Of Birth: <td><%= text_field_tag(:date_of_birth) %></td></tr>
+<tr><td>Physical Address: <td><%= text_area_tag(:physical_address) %></td></tr>
+<tr><td>Postal Address: <td><%= text_area_tag(:postal_address) %></td></tr>
+<tr><td>Email: <td><%= text_field_tag(:email_address) %></td></tr>
+<tr><td>Contact Number: <td><%= text_field_tag(:contact_number) %></td></tr>
+<tr><td>Password: <td><%= password_field_tag(:password) %></td></tr>
+<tr><td>Confirm: <td><%= password_field_tag(:confirm) %></td></tr>
+<tr><td>Newsletter ?<td><%= check_box_tag(:isSubscribed) %></td></tr>
+<tr><td></td><td align="right"><%= submit_tag("Save")%></td></tr>
+</table>
+<% end %>

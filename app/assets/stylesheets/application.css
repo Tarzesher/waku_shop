@@ -11,3 +11,10 @@
  *= require_self
  *= require_tree .
 */
+
+$containerMargin = 50%
+
+#container-margin
+ {
+ 	margin-top: $containerMargin;
+}
