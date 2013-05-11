@@ -14,4 +14,5 @@
 #
 
 class WkshpCart < ActiveRecord::Base
+	belongs_to :WkshpOrder
 end

@@ -27,18 +27,26 @@
 	<div class="navbar-inner" align="center">
 		<%= form_tag("/search", :method => "get") do %>
 			Search
-			<%= text_field_tag(:q) %>
-			<%= submit_tag("Find") %>
+			<%= search_field(:q, :class=>"search", :style => "margin-top: 15px") %>
+			<%= submit_tag("Find", :class=>"btn btn-medium btn-secondary") %>
 		<% end %>	
+	</div>
+
+	<div class="container">
+		<h3>
+		<%= yield(:page_name) %>
+		</h3>
+	
+			<%= yield %>
 	</div>
 </header>
 
 
-<div class="container">
-	<div class ="">
-		<%= yield %>
+
+	<div class ="container-margin">
+		
 	</div>
-</div>
+
 
 </body>
 </html>

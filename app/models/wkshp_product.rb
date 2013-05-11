@@ -14,4 +14,5 @@
 #
 
 class WkshpProduct < ActiveRecord::Base
+	belongs_to :WkshpDepartment
 end

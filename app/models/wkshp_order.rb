@@ -15,4 +15,5 @@
 #
 
 class WkshpOrder < ActiveRecord::Base
+	belongs_to :WkshpAccount
 end

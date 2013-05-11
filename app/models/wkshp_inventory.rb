@@ -11,4 +11,5 @@
 #
 
 class WkshpInventory < ActiveRecord::Base
+	has_many :WkshpDepartment
 end

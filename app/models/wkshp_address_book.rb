@@ -14,4 +14,5 @@
 #
 
 class WkshpAddressBook < ActiveRecord::Base
+	belongs_to :WkshpAccount
 end

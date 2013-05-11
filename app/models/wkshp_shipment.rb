@@ -12,4 +12,5 @@
 #
 
 class WkshpShipment < ActiveRecord::Base
+	has_many :WkshpOrder
 end

@@ -1,5 +1,8 @@
 WakuShop::Application.routes.draw do
 
+
+  resources :wkshp_accounts
+
   get "wks/home"
 
   get "wks/help"
@@ -24,7 +27,7 @@ WakuShop::Application.routes.draw do
 
   get "wkshp_departments/new"
 
-  get "wkshp_accounts/new"
+  #get "wkshp_accounts/new"
 
 
   # The priority is based upon order of creation:

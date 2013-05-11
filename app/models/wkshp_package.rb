@@ -10,4 +10,5 @@
 #
 
 class WkshpPackage < ActiveRecord::Base
+	has_many :WkshpOrder
 end
