@@ -4,6 +4,10 @@ def new
 	@account = WkshpAccount.new	
 end
 
+
+def index
+end
+
 def create
 	@account = WkshpAccount.new(params [:wkshp_account])
 	if(@account.save)
