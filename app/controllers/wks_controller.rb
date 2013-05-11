@@ -4,4 +4,7 @@ class WksController < ApplicationController
 
   def help
   end
+
+  def index
+  end
 end
