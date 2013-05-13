@@ -20,4 +20,6 @@
 class WkshpAccount < ActiveRecord::Base
 	attr_accessible	:user_id, :newsletter_id,:name,:surname,:date_of_birth,:physical_address,:postal_address,:email_address,:contact_number
 	has_many :WkshpAddressBook
+	has_attached_file :photo
+
 end
