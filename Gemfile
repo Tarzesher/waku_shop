@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.1'
 
-
 gem 'bootstrap-sass', '2.3.1.0'
 
 group :development, :test do
@@ -28,9 +27,11 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
+
 group :production do
   gem 'pg', '0.12.2'
 end
+
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password

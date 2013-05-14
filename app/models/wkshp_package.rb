@@ -11,4 +11,6 @@
 
 class WkshpPackage < ActiveRecord::Base
 	has_many :WkshpOrder
+	validates(:name,  presence: true)
+	validates(:description,  presence: true)
 end

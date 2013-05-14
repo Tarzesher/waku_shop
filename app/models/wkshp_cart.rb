@@ -15,4 +15,8 @@
 
 class WkshpCart < ActiveRecord::Base
 	belongs_to :WkshpOrder
+
+	validates(:quantity,  presence: true)
+	validates(:vat,  presence: true)
+	validates(:amount,  presence: true)
 end

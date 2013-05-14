@@ -20,6 +20,12 @@
 class WkshpAccount < ActiveRecord::Base
 	attr_accessible	:user_id, :newsletter_id,:name,:surname,:date_of_birth,:physical_address,:postal_address,:email_address,:contact_number
 	has_many :WkshpAddressBook
-	has_attached_file :photo
-
+	validates( :name , presence: true)
+	validates( :surname , presence: true)
+	validates( :date_of_birth , presence: true)
+	validates( :physical_address , presence: true)
+	validates( :postal_address , presence: true)
+	VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+	validates :email_address , presence: true, format: {with: VALID_EMAIL_REGEX}
+	validates( :contact_number , presence: true)
 end

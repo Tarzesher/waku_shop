@@ -12,4 +12,6 @@
 
 class WkshpInventory < ActiveRecord::Base
 	has_many :WkshpDepartment
+	validates(:items_count,  presence: true)
+	validates(:sold_items,  presence: true)
 end

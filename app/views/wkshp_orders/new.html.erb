@@ -1,2 +1,10 @@
-<h1>WkshpOrders#new</h1>
-<p>Find me in app/views/wkshp_orders/new.html.erb</p>
+<% provide(:page_name, "Orders") %>
+<table>
+<%= form_for(@order) do |f| %>
+<tr><td>Number of Item: <td><%= f.text_field :items_count %></td></tr>
+<tr><td>Amont: <td><%= f.text_field :amount %></td></tr>
+<tr><td>Order Date<td><%= f.text_field :order_date %></td></tr>
+<tr><td></td><td align="right"><%= f.submit("Save", :class=>"btn btn-medium btn-secondary")%></td></tr>
+
+<% end %>
+</table>

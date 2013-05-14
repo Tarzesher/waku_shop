@@ -15,4 +15,11 @@
 
 class WkshpProduct < ActiveRecord::Base
 	belongs_to :WkshpDepartment
+	
+	#has_attached_file :photo
+	validates(:name,  presence: true)
+	validates(:description,  presence: true)
+	validates(:price,  presence: true)
+	validates(:is_promoted,  presence: true)
+	validates(:is_auctioned,  presence: true)
 end

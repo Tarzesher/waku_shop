@@ -16,4 +16,7 @@
 
 class WkshpOrder < ActiveRecord::Base
 	belongs_to :WkshpAccount
+	validates(:items_count,  presence: true)
+	validates(:amount,  presence: true)
+	validates(:order_date,  presence: true)
 end

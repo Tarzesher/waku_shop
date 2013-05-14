@@ -13,4 +13,8 @@
 
 class WkshpShipment < ActiveRecord::Base
 	has_many :WkshpOrder
+
+	 validates(:description, presence: true)
+	 validates(:departure_date, presence: true)
+	 validates(:delivery_date, presence: true)
 end

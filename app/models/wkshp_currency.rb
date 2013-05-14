@@ -12,4 +12,9 @@
 #
 
 class WkshpCurrency < ActiveRecord::Base
+	validates(:name,  presence: true)
+	validates(:symbol,  presence: true)
+	validates(:exchange_rate,  presence: true)
 end
+
+

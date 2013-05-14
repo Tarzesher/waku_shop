@@ -1,2 +1,10 @@
-<h1>WkshpInventories#new</h1>
-<p>Find me in app/views/wkshp_inventories/new.html.erb</p>
+<% provide(:page_name, "Inventory") %>
+<table>
+<%= form_for(@inventory) do |f| %>
+
+<tr><td>Number of Items: <td><%= f.text_field :items_count %></td></tr>
+<tr><td>Items Sold: <td><%= f.text_field :sold_items %></td></tr>
+<tr><td></td><td align="right"><%= f.submit("Save", :class=>"btn btn-medium btn-secondary")%></td></tr>
+
+<% end %>
+</table>

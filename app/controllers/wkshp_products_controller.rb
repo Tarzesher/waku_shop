@@ -8,15 +8,15 @@ def index
 end
 
 def create
-	@product = WkshpProduct.new(params [:wkshp_product])
+	@product = WkshpProduct.new(params [:wkshp_products])
 	if(@product.save)
-		redirect_to @account
+		redirect_to @product
 	else
 		render "new"
 	end
 end
 
 def show
-  	@produc = WkshpProduct.find(params [:id ])
+  	@product = WkshpProduct.find(params [:id ])
 end
 end

@@ -9,4 +9,5 @@
 #
 
 class WkshpCountry < ActiveRecord::Base
+	validates(:name,  presence: true)
 end

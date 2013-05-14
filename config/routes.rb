@@ -1,33 +1,24 @@
 WakuShop::Application.routes.draw do
-
-
+  
   resources :wkshp_accounts
-
-  get "wks/home"
+  resources :wkshp_products
+  resources :wkshp_address_books
+  resources :wkshp_inventories
+  resources :wkshp_orders
+  resources :wkshp_departments
+  resources :wkshp_packages
+  resources :wkshp_countries
+  resources :wkshp_shipments
+  #rosources :wkshp_countries
+  #rosources :wkshp_shipments
+  resources :wkshp_inventories
+  resources :wkshp_carts
+  resources :wkshp_currencies
 
   get "wks/help"
+  get "wks/home", :to => 'wks#home'
 
-  get "wkshp_carts/new"
-
-  get "wkshp_packages/new"
-
-  get "wkshp_address_books/new"
-
-  get "wkshp_orders/new"
-
-  get "wkshp_products/new"
-
-  get "wkshp_currencies/new"
-
-  get "wkshp_shipments/new"
-
-  get "wkshp_countries/new"
-
-  get "wkshp_inventories/new"
-
-  get "wkshp_departments/new"
-
-   root :to => 'wks#home'
+  root :to => 'wks#home'
 
   # See how all your routes lay out with "rake routes"
 

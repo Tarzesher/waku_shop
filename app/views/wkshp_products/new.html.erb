@@ -1,10 +1,11 @@
 <% provide(:page_name, "Product Details") %>
 <table>
-<%= form_for(@product :html =>{multitask => true}) do |f| %>
-<tr><td><td><%= f.text_field :photo %></td></tr>
+<%= form_for(@product, :html => { :multipart => true}) do |f| %>
+
 <tr><td>Name: <td><%= f.text_field :name %></td></tr>
 <tr><td>Description: <td><%= f.text_field :description %></td></tr>
 <tr><td>price: <td><%= f.text_field :price %></td></tr>
+<tr><td>Image<td><%= f.file_field :photo %></td></tr>
 <tr><td>Is Auctioned: <td><%= f.check_box :is_auctioned, :size => "30x3" %></td></tr>
 <tr><td>is Promoted: <td><%= f.check_box :is_promoted, :size => "30x3" %></td></tr>
 <tr><td></td><td align="right"><%= f.submit("Save", :class=>"btn btn-medium btn-secondary")%></td></tr>
